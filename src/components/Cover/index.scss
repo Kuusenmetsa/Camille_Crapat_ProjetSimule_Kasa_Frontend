@@ -1,0 +1,36 @@
+.cover {
+   width: 100%;
+   height: 200px;
+   border-radius: 25px;
+   box-shadow: 8px 14px 15px -16px;
+   overflow: hidden;
+   position: relative;
+   img {
+      position: relative;
+      width: 100%;
+      object-fit: cover;
+      top: -330px;
+   }
+   &--background {
+      background-color: rgba($color: #000000, $alpha: 0.6);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+   }
+   p {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      font-weight: 700;
+      font-size: 48px;
+      color: #fff;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+}
