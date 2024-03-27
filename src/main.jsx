@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import './global.css';
+import './global.scss';
 
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -14,8 +14,8 @@ import Error from './pages/Error';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
    <React.StrictMode>
-      <Header />
       <Router>
+         <Header />
          <Routes>
             <Route path="/" element={<Locations />} />
             <Route path="/location/:id" element={<Location />} />
