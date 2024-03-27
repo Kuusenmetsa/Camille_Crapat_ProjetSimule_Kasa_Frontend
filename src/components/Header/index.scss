@@ -1,0 +1,31 @@
+header {
+   padding-top: 45px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 113px;
+   overflow: hidden;
+   img {
+      height: 68px;
+   }
+   nav {
+      ul {
+         display: flex;
+         justify-content: space-between;
+         li:first-child {
+            margin-right: 60px;
+         }
+         li {
+            list-style: none;
+            font-size: 24px;
+            font-weight: 500;
+            .active {
+               text-decoration: underline;
+            }
+         }
+         li:hover {
+            text-decoration: underline;
+         }
+      }
+   }
+}
