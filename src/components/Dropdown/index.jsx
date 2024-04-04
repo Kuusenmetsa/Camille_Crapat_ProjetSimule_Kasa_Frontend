@@ -9,8 +9,8 @@ import ChevronDown from '../../assets/icônes/chevron-down-solid.svg';
 export default function Dropdown({ title, content }) {
    const [open, isOpen] = useState(false);
    return (
-      <div className="dropdown" onClick={() => isOpen(!open)}>
-         <div className="dropdown__header">
+      <div className="dropdown">
+         <div className="dropdown__header" onClick={() => isOpen(!open)}>
             <div className="dropdown__header__title">{title}</div>
             <div className="dropdown__header__button">
                {open ? (
