@@ -1,0 +1,63 @@
+.slide {
+   width: 100%;
+   height: 350px;
+   border-radius: 25px;
+   background-color: grey;
+}
+.information {
+   display: flex;
+   justify-content: space-between;
+   padding-top: 30px;
+   &__appartment {
+      &__title {
+         color: #ff6060;
+         font-size: 36px;
+         font-weight: 500;
+      }
+      &__tags {
+         display: flex;
+         margin-top: 20px;
+      }
+      &__place {
+         font-size: 18px;
+         font-weight: 500;
+      }
+   }
+   &__person {
+      &__identity {
+         display: flex;
+         &--photo {
+            width: 64px;
+            height: 64px;
+            border-radius: 64px;
+            background-color: #c4c4c4;
+         }
+         &--name {
+            height: 64px;
+            display: flex;
+            text-align: end;
+            align-items: center;
+            max-width: 100px;
+            flex-wrap: wrap;
+            color: #ff6060;
+            font-size: 18px;
+            font-weight: 500;
+            margin-right: 10px;
+         }
+      }
+      &__notation {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         margin-top: 15px;
+      }
+   }
+}
+.dropdowns--location {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   &--taille {
+      width: 45%;
+   }
+}
