@@ -1,5 +1,6 @@
 .tag {
-   width: 115px;
+   min-width: 115px;
+   width: auto;
    height: 25px;
    border-radius: 10px;
    background-color: #ff6060;
@@ -10,4 +11,5 @@
    font-size: 14px;
    font-weight: 700;
    margin-right: 10px;
+   padding: 0 15px;
 }
