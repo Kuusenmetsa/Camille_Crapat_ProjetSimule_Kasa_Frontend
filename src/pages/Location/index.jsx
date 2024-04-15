@@ -47,7 +47,11 @@ export default function Location() {
                         <div className="information__person__identity--name">
                            {data.host.name}
                         </div>
-                        <div className="information__person__identity--photo"></div>
+                        <img
+                           src={data.host.picture}
+                           alt={`photo - ${data.host.name}`}
+                           className="information__person__identity--photo"
+                        />
                      </div>
                      <div className="information__person__notation">
                         {[...Array(5)].map((el, index) =>
