@@ -14,19 +14,38 @@
    font-family: 'Montserrat';
    box-sizing: border-box;
 }
-
-a {
-   color: #000;
-   text-decoration: none;
-}
 body {
    padding: 0;
    margin: 0;
 }
-header,
-section {
-   padding: 0 100px;
+a {
+   color: #000;
+   text-decoration: none;
 }
-section {
-   margin: 50px 0;
+@media screen and (max-width: 767px) {
+   header,
+   section {
+      padding: 0 20px;
+   }
+   section {
+      margin: 20px 0;
+   }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+   header,
+   section {
+      padding: 0 55px;
+   }
+   section {
+      margin: 33px 0;
+   }
+}
+@media screen and (min-width: 1024px) {
+   header,
+   section {
+      padding: 0 100px;
+   }
+   section {
+      margin: 50px 0;
+   }
 }
