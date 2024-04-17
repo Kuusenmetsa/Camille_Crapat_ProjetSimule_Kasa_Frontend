@@ -1,7 +1,22 @@
+@media screen and (max-width: 767px) {
+   footer {
+      font-size: 12px;
+   }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+   footer {
+      font-size: 16px;
+   }
+}
+@media screen and (min-width: 1024px) {
+   footer {
+      font-size: 24px;
+   }
+}
+
 footer {
    background-color: #000;
    color: #fff;
-   font-size: 24px;
    font-weight: 500;
    padding: 65px 0 30px 0;
    display: flex;
