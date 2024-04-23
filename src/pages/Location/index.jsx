@@ -26,7 +26,7 @@ export default function Location() {
    return (
       <>
          {data && (
-            <section>
+            <section className="location">
                <div className="slide"></div>
                <div className="information">
                   <div className="information__appartment">

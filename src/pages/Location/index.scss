@@ -1,6 +1,144 @@
+@media screen and (max-width: 767px) {
+   .slide {
+      height: 250px;
+   }
+   .information {
+      flex-direction: column;
+      &__appartment {
+         &__title {
+            font-size: 18px;
+         }
+         &__tags {
+            margin-top: 10px;
+            max-width: 100%;
+            height: 65px;
+         }
+         &__place {
+            font-size: 14px;
+            margin-top: 5px;
+         }
+      }
+      &__person {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         margin-top: 10px;
+         &__identity {
+            order: 1;
+            &--name {
+               font-size: 12px;
+               max-width: 70px;
+               height: 32px;
+            }
+            &--photo {
+               width: 32px;
+               height: 32px;
+               border-radius: 32px;
+            }
+         }
+         &__notation {
+            order: 0;
+            margin: 0;
+         }
+      }
+   }
+   .dropdowns--location {
+      justify-content: space-between;
+      flex-direction: column;
+      &--taille {
+         width: 100%;
+      }
+   }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+   .location {
+      min-height: 72vh;
+   }
+   .slide {
+      height: 300px;
+   }
+   .information {
+      &__appartment {
+         &__title {
+            font-size: 26px;
+         }
+         &__tags {
+            margin-top: 20px;
+         }
+         &__place {
+            font-size: 16px;
+            margin-top: 5px;
+         }
+      }
+      &__person {
+         &__identity {
+            justify-content: flex-end;
+            &--name {
+               font-size: 18px;
+               max-width: 70px;
+               height: 48px;
+            }
+            &--photo {
+               width: 48px;
+               height: 48px;
+               border-radius: 48px;
+            }
+         }
+         &__notation {
+            margin-top: 20px;
+         }
+      }
+   }
+   .dropdowns--location {
+      margin-top: 10px;
+      &--taille {
+         width: 48%;
+      }
+   }
+}
+@media screen and (min-width: 1024px) {
+   .slide {
+      height: 350px;
+   }
+   .information {
+      &__appartment {
+         &__title {
+            font-size: 36px;
+         }
+         &__tags {
+            margin-top: 20px;
+         }
+         &__place {
+            font-size: 18px;
+         }
+      }
+      &__person {
+         &__identity {
+            &--name {
+               font-size: 18px;
+               max-width: 100px;
+               height: 64px;
+            }
+            &--photo {
+               width: 64px;
+               height: 64px;
+               border-radius: 64px;
+            }
+         }
+         &__notation {
+            margin-top: 15px;
+         }
+      }
+   }
+   .dropdowns--location {
+      &--taille {
+         width: 45%;
+      }
+   }
+}
+
 .slide {
    width: 100%;
-   height: 350px;
    border-radius: 25px;
    background-color: grey;
 }
@@ -11,35 +149,26 @@
    &__appartment {
       &__title {
          color: #ff6060;
-         font-size: 36px;
          font-weight: 500;
       }
       &__tags {
          display: flex;
-         margin-top: 20px;
+         flex-wrap: wrap;
       }
       &__place {
-         font-size: 18px;
          font-weight: 500;
       }
    }
    &__person {
       &__identity {
          display: flex;
-         &--photo {
-            width: 64px;
-            height: 64px;
-            border-radius: 64px;
-         }
+
          &--name {
-            height: 64px;
             display: flex;
             text-align: end;
             align-items: center;
-            max-width: 100px;
             flex-wrap: wrap;
             color: #ff6060;
-            font-size: 18px;
             font-weight: 500;
             margin-right: 10px;
          }
@@ -48,7 +177,6 @@
          display: flex;
          justify-content: space-between;
          align-items: center;
-         margin-top: 15px;
       }
    }
 }
@@ -56,7 +184,4 @@
    width: 100%;
    display: flex;
    justify-content: space-between;
-   &--taille {
-      width: 45%;
-   }
 }
