@@ -1,0 +1,54 @@
+@media screen and (max-width: 767px) {
+   .slide {
+      height: 250px;
+   }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+   .slide {
+      height: 300px;
+   }
+}
+@media screen and (min-width: 1024px) {
+   .slide {
+      height: 400px;
+   }
+}
+.slide {
+   width: 100%;
+   border-radius: 25px;
+   background-color: grey;
+   position: relative;
+   overflow: hidden;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   &__button {
+      width: 46px;
+      overflow: hidden;
+      position: relative;
+      z-index: 1;
+      cursor: pointer;
+      box-sizing: content-box;
+      &--left {
+         padding-left: 20px;
+      }
+      &--right {
+         padding-right: 20px;
+      }
+   }
+   &__index {
+      width: 100%;
+      position: absolute;
+      z-index: 2;
+      top: 85%;
+      text-align: center;
+      color: #fff;
+   }
+   &__image {
+      position: absolute;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      z-index: 0;
+   }
+}
