@@ -6,6 +6,7 @@ import './index.scss';
 import Tag from '../../components/Tag';
 import Star from '../../components/Notation';
 import Dropdown from '../../components/Dropdown';
+import Slide from '../../components/Slide';
 import logements from '../../data/logements.json';
 
 export default function Location() {
@@ -27,16 +28,7 @@ export default function Location() {
       <>
          {data && (
             <section className="location">
-               <div className="slide">
-                  {data.pictures.length > 1 && (
-                     <>
-                        <img src="" alt="" className="slide__button--left" />
-                        <img src="" alt="" className="slide__button--right" />
-                        <p className="slide__index">11</p>
-                     </>
-                  )}
-                  <img src="" alt="" className="slide__image" />
-               </div>
+               <Slide pictures={data.pictures} />
                <div className="information">
                   <div className="information__appartment">
                      <div className="information__appartment__title">

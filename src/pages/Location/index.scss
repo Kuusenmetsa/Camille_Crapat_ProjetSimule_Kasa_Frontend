@@ -1,7 +1,4 @@
 @media screen and (max-width: 767px) {
-   .slide {
-      height: 250px;
-   }
    .information {
       flex-direction: column;
       &__appartment {
@@ -54,9 +51,6 @@
    .location {
       min-height: 72vh;
    }
-   .slide {
-      height: 300px;
-   }
    .information {
       &__appartment {
          &__title {
@@ -97,9 +91,6 @@
    }
 }
 @media screen and (min-width: 1024px) {
-   .slide {
-      height: 350px;
-   }
    .information {
       &__appartment {
          &__title {
@@ -137,11 +128,6 @@
    }
 }
 
-.slide {
-   width: 100%;
-   border-radius: 25px;
-   background-color: grey;
-}
 .information {
    display: flex;
    justify-content: space-between;
