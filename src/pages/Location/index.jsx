@@ -27,7 +27,16 @@ export default function Location() {
       <>
          {data && (
             <section className="location">
-               <div className="slide"></div>
+               <div className="slide">
+                  {data.pictures.length > 1 && (
+                     <>
+                        <img src="" alt="" className="slide__button--left" />
+                        <img src="" alt="" className="slide__button--right" />
+                        <p className="slide__index">11</p>
+                     </>
+                  )}
+                  <img src="" alt="" className="slide__image" />
+               </div>
                <div className="information">
                   <div className="information__appartment">
                      <div className="information__appartment__title">
