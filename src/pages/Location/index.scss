@@ -1,4 +1,7 @@
 @media screen and (max-width: 767px) {
+   .location {
+      min-height: 70vh;
+   }
    .information {
       flex-direction: column;
       &__appartment {
