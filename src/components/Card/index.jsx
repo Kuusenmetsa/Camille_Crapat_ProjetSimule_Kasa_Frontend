@@ -4,11 +4,12 @@ import './index.scss';
 
 export default function Card({ id, title, cover }) {
    return (
-      <NavLink to={`/location/${id}`} className="card">
+      <div className="card">
+         <NavLink to={`/location/${id}`} className="film"></NavLink>
          <figure>
             <img src={cover} alt={title} />
             <figcaption>{title}</figcaption>
          </figure>
-      </NavLink>
+      </div>
    );
 }

@@ -1,6 +1,14 @@
 @media screen and (max-width: 767px) {
    .card {
       aspect-ratio: 31 / 24;
+      .film {
+         background: linear-gradient(
+            rgba(255, 255, 255, 0) 25%,
+            rgba(135, 135, 135, 0.05) 60%,
+            rgba(0, 0, 0, 0.08) 90%,
+            rgba(0, 0, 0, 0.15) 100%
+         );
+      }
       figure {
          img {
             height: 75%;
@@ -15,6 +23,14 @@
 @media screen and (min-width: 768px) and (max-width: 1023px) {
    .card {
       aspect-ratio: 31 / 26;
+      .film {
+         background: linear-gradient(
+            rgba(255, 255, 255, 0) 25%,
+            rgba(135, 135, 135, 0.05) 60%,
+            rgba(0, 0, 0, 0.09) 90%,
+            rgba(0, 0, 0, 0.2) 100%
+         );
+      }
       figure {
          img {
             height: 74%;
@@ -29,6 +45,14 @@
 @media screen and (min-width: 1024px) {
    .card {
       aspect-ratio: 1 / 1;
+      .film {
+         background: linear-gradient(
+            rgba(255, 255, 255, 0) 25%,
+            rgba(135, 135, 135, 0.05) 60%,
+            rgba(0, 0, 0, 0.1) 90%,
+            rgba(0, 0, 0, 0.25) 100%
+         );
+      }
       figure {
          img {
             height: 73%;
@@ -43,8 +67,18 @@
 .card {
    width: 100%;
    border-radius: 10px;
-   background-color: #ff6060;
+   position: relative;
    overflow: hidden;
+   .film {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      top: 0;
+      left: 0;
+      display: block;
+      z-index: 1;
+   }
    figure {
       width: 100%;
       height: 100%;
@@ -53,11 +87,14 @@
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
+      position: relative;
+      z-index: 0;
       img {
          width: 100%;
          object-fit: cover;
       }
       figcaption {
+         background-color: #ff6060;
          color: #fff;
          font-size: 18px;
          font-weight: 700;
