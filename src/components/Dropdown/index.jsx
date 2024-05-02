@@ -31,8 +31,8 @@ export default function Dropdown({ title, content }) {
                >
                   {title === 'Equipements' ? (
                      <ul>
-                        {content.map((el) => (
-                           <li key={Date.now()}>{el}</li>
+                        {content.map((el, index) => (
+                           <li key={`li - ${Date.now()} - ${index}`}>{el}</li>
                         ))}
                      </ul>
                   ) : (
